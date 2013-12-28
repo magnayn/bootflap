@@ -1,0 +1,67 @@
+<html>
+<body>
+
+
+<polymer-element name="bf-title" noscript>
+<template>
+<link rel="stylesheet" href="css/bf-title.css">
+<style>
+      :host {
+        display: block; /* Note: by default elements are always display:inline. */
+      }
+    </style>
+  <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+    <content></content> <b class="caret"></b>
+  </a>
+  </template>
+</polymer-element>
+
+<polymer-element name="bf-menu" noscript>
+<template>
+<link rel="stylesheet" href="css/bf-menu.css">
+<style>
+      :host {
+        display: block; /* Note: by default elements are always display:inline. */
+      }
+    </style>
+ 
+  <ul role="menu" class="dropdown-menu">   
+    <content></content>
+  </ul>
+  </template>
+</polymer-element>
+
+<polymer-element name="bf-item" noscript>
+<template>
+<link rel="stylesheet" href="css/bf-item.css">
+
+  <li>
+    <content></content>
+  </li>
+  
+  </template>
+</polymer-element>
+
+<polymer-element name="bf-dropdown">
+
+
+    <template>
+ <link rel="stylesheet" href="css/bf-dropdown.css">
+ <style>
+      :host {
+        display: block; /* Note: by default elements are always display:inline. */
+      }
+    </style>
+        <div>
+          <div class="dropdown">
+            
+             <content class="title" select="bf-title"></content> 
+             <content class="menu"  select="bf-menu"></content> 
+             
+           
+          </div>
+        </div>        
+    </template>
+    <script type="application/dart" src="dropdown.dart"></script>
+</polymer-element>
+</body></html>

@@ -1,0 +1,9 @@
+name: bootflap
+version: 0.0.1
+author: Nigel Magnay <nigel.magnay@gmail.com>
+description: Bootflap is another porting of Twitter Bootstrap 3.0 in Dart.
+homepage: https://github.com/magnayn/bootflap
+dependencies:
+  browser: any  
+  polymer: any
+  

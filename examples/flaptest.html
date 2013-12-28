@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample app</title>
+   <link rel="stylesheet" href="packages/bootflap/css/bootflap.css">
+    
+    <!-- import the click-counter -->
+    <link rel="import" href="../lib/dropdown.html">
+    <script type="application/dart">export 'package:polymer/init.dart';</script>
+    <script src="packages/browser/dart.js"></script>
+
+  </head>
+  <body>
+    <h1>Flaptest</h1>
+<a href="#">Linky poos</a>
+  <bf-dropdown>
+    <bf-title>Hello</bf-title>
+    <bf-menu>
+      <bf-item><a href="http://news.bbc.co.uk">BBC News</a></bf-item>
+      <bf-item class="divider">xyzzy</bf-item>
+      <bf-item class="dropdown-header">Header #2</bf-item>
+      <bf-item><a href="http://www.twitter.com/">Twitter</a></bf-item>
+      <bf-item><a href="http://www.theinquirer.net">INQ</a></bf-item>
+      <bf-item><a href="http://www.gmail.com">Gmail</a></bf-item>      
+    </bf-menu>   
+  </bf-dropdown>
+  
+  <bf-dropdown>
+    <bf-title>Menu</bf-title>
+    <bf-menu>
+      <bf-item><a href="#">Menu Menu</a></bf-item>
+      <bf-item class="divider"></bf-item>
+      <bf-item class="dropdown-header">Header #2</bf-item>
+      <bf-item><a href="#">Action</a></bf-item>
+       <bf-item class="divider"></bf-item>
+      <bf-item><a href="#">Action</a></bf-item>
+      <bf-item><a href="#">Action</a></bf-item>      
+    </bf-menu>   
+  </bf-dropdown>
+  
+    <bf-dropdown>
+    <bf-title>Another</bf-title>
+    <bf-menu>
+      <bf-item><a href="#">Another Menu</a></bf-item>
+      <bf-item class="divider"></bf-item>
+      <bf-item class="dropdown-header">Header #2</bf-item>
+      <bf-item><a href="#">Action</a></bf-item>
+      <bf-item><a href="#">Action</a></bf-item>
+      <bf-item><a href="#">Action</a></bf-item>      
+    </bf-menu>   
+  </bf-dropdown>
+
+
+  </body>
+</html>
